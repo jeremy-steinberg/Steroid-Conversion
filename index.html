@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steroid Conversion Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Steroid Conversion Calculator</h1>
+        <div class="input-group">
+            <label for="amount">Dose:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+        <div class="input-group">
+            <label for="fromSteroid">From Steroid:</label>
+            <select id="fromSteroid">
+                <option value="Betamethasone">Betamethasone</option>
+                <option value="Dexamethasone">Dexamethasone</option>
+                <option value="Hydrocortisone">Hydrocortisone</option>
+                <option value="MethylPrednisoLONE">MethylPrednisoLONE</option>
+                <option value="Triamcinolone">Triamcinolone</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="toSteroid">To Steroid:</label>
+            <select id="toSteroid">
+                <option value="Betamethasone">Betamethasone</option>
+                <option value="Dexamethasone">Dexamethasone</option>
+                <option value="Hydrocortisone">Hydrocortisone</option>
+                <option value="MethylPrednisoLONE">MethylPrednisoLONE</option>
+                <option value="Triamcinolone">Triamcinolone</option>
+            </select>
+        </div>
+        <button onclick="calculate()">Convert</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
